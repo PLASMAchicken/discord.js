@@ -436,7 +436,7 @@ class Message extends Base {
    * @returns {Promise<Message>}
    * @example
    * // Delete a message
-   * message.delete()
+   * message.delete({ timeout: 5000 })
    *   .then(msg => console.log(`Deleted message from ${msg.author.username}`))
    *   .catch(console.error);
    */
